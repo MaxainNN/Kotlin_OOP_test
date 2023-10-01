@@ -1,0 +1,21 @@
+Index: src/main/kotlin/Main.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>fun main(args: Array<String>) {\r\n    val secretary = Secretary(name=\"Max\")\r\n\r\n\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/kotlin/Main.kt b/src/main/kotlin/Main.kt
+--- a/src/main/kotlin/Main.kt	(revision 27c43a4843466537b41aa323518f417d0f01cca4)
++++ b/src/main/kotlin/Main.kt	(date 1696168432953)
+@@ -1,5 +1,7 @@
+-fun main(args: Array<String>) {
++fun main() {
+     val secretary = Secretary(name="Max")
+-
++// This is a comment
++    secretary.translate()
++    println("Bonus:${secretary.bonus()}")
+ 
+ }
+\ No newline at end of file
